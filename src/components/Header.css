@@ -1,0 +1,16 @@
+header{
+    position:relative;
+    margin:0 auto;
+    clear:left;
+    height:auto;
+    z-index: 0;
+    text-align:center;
+}
+
+header>h3{
+    font-size: 30px;
+}
+
+header>a{
+    color: white;
+}

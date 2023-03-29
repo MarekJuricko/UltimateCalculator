@@ -1,0 +1,15 @@
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: -5;
+    overflow: hidden;
+}
+
+footer>p{
+    margin: 0.75vh;
+}
