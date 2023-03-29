@@ -7,10 +7,8 @@ header{
     text-align:center;
 }
 
-header>h3{
+header>h3>a{
     font-size: 30px;
-}
-
-header>a{
     color: white;
+    text-decoration: none;
 }
