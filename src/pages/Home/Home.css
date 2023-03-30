@@ -1,0 +1,21 @@
+.menu{ 
+    display: grid;
+    margin: auto;
+    padding: 2.5vh 0 10vh 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 20rem);
+    grid-template-rows: minmax(7rem, auto) repeat(1, 15rem);
+}
+
+.menu>a{
+    color: rgb(0, 150, 0);
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;   
+}
+
+.menu>a:hover{
+    color: rgb(0, 255, 0);
+}

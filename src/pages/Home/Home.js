@@ -3,9 +3,9 @@ import { Link } from "react-router-dom"
 
 const Home = () => {
   return (
-    <>
-    <Link to="calculator">Calculator</Link>
-    </>
+    <div className="menu">
+      <Link to="calculator">Calculator</Link>
+    </div>
   )
 }
 
