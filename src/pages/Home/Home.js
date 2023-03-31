@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <div className="menu">
       <Link to="calculator">Calculator</Link>
+      <Link to="BMI">BMI Index</Link>
     </div>
   )
 }
