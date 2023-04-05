@@ -4,8 +4,9 @@ import { Link } from "react-router-dom"
 const Home = () => {
   return (
     <div className="menu">
-      <Link to="calculator">Calculator</Link>
+      <Link to="Calculator">Calculator</Link>
       <Link to="BMI">BMI Index</Link>
+      <Link to="CalorieCalculator">Calorie Calculator</Link>
     </div>
   )
 }

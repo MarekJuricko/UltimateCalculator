@@ -3,6 +3,7 @@ import SharedLayout from "./pages/SharedLayout"
 import Home from "./pages/Home/Home"
 import Calculator from "./pages/Calculator/Calculator"
 import BMI from "./pages/BMI/BMI"
+import CalorieCalculator from "./pages/CalorieCalculator/CalorieCalculator"
 
 const App = () => {
   return (
@@ -11,8 +12,9 @@ const App = () => {
 
             <Route path="/" element={ <SharedLayout/> }>
               <Route index element={ <Home/> }/>
-              <Route path="calculator" element={ <Calculator/> }/>
+              <Route path="Calculator" element={ <Calculator/> }/>
               <Route path="BMI" element={ <BMI/> }/>
+              <Route path="CalorieCalculator" element={ <CalorieCalculator/> } />
             </Route>
 
         </Routes>
