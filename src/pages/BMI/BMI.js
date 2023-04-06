@@ -39,7 +39,6 @@ const BMI = () => {
                     checkBmi = ((parseFloat(testWeight) / ((parseFloat(height) / 100) * (parseFloat(height) / 100)))).toFixed(2);
                     testWeight++
                 }while(checkBmi <= 18.25 )
-                console.log(checkBmi);
                 return testWeight
             }
             
@@ -51,7 +50,6 @@ const BMI = () => {
                     checkBmi = ((parseFloat(testWeight) / ((parseFloat(height) / 100) * (parseFloat(height) / 100)))).toFixed(2);
                     testWeight++
                 }while(checkBmi <= 24.75 )
-                console.log(checkBmi);
                 return testWeight
             }
         
