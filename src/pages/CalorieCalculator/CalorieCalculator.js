@@ -57,13 +57,13 @@ const CalorieCalculator = () => {
 
         <form onSubmit={submitForm} className="CalorieCalculator-form">
             <div className="CalorieCalculator-input">
+                <input type="radio" name="gender" value="male" onChange={(e)=>{setGender(e.target.value)}}/>Male
+                <input type="radio" name="gender" value="female" onChange={(e)=>{setGender(e.target.value)}}/>Female
+            </div>
+            <div className="CalorieCalculator-input">
                 <label htmlFor="age">Age</label>
                 <input name="age" type="number" onChange={(e)=>{setAge(e.target.value)}}/>
                 <label htmlFor="age">years</label>
-            </div>
-            <div className="CalorieCalculator-input">
-                <input type="radio" name="gender" value="male" onChange={(e)=>{setGender(e.target.value)}}/>Male
-                <input type="radio" name="gender" value="female" onChange={(e)=>{setGender(e.target.value)}}/>Female
             </div>
             <div className="CalorieCalculator-input">
                 <label htmlFor="height">Height</label>
