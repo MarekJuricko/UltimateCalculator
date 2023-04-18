@@ -8,6 +8,7 @@ const Home = () => {
       <Link to="BMI">BMI Index</Link>
       <Link to="CalorieCalculator">Calorie Calculator</Link>
       <Link to="BodyFat">Body Fat</Link>
+      <Link to="Inflation">Inflation</Link>
     </div>
   )
 }

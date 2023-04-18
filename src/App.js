@@ -5,6 +5,7 @@ import Calculator from "./pages/Calculator/Calculator"
 import BMI from "./pages/BMI/BMI"
 import CalorieCalculator from "./pages/CalorieCalculator/CalorieCalculator"
 import BodyFat from "./pages/BodyFat/BodyFat"
+import Inflation from "./pages/Inflation/Inflation"
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
               <Route path="BMI" element={ <BMI/> }/>
               <Route path="CalorieCalculator" element={ <CalorieCalculator/> } />
               <Route path="BodyFat" element={ <BodyFat/> } />
+              <Route path="Inflation" element={ <Inflation/> } />
             </Route>
 
         </Routes>
