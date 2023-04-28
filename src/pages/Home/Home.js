@@ -9,6 +9,7 @@ const Home = () => {
       <Link to="CalorieCalculator">Calorie Calculator</Link>
       <Link to="BodyFat">Body Fat</Link>
       <Link to="Inflation">Inflation</Link>
+      <Link to="Salary">Salary</Link>
     </div>
   )
 }
