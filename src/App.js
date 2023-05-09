@@ -7,6 +7,7 @@ import CalorieCalculator from "./pages/CalorieCalculator/CalorieCalculator"
 import BodyFat from "./pages/BodyFat/BodyFat"
 import Inflation from "./pages/Inflation/Inflation"
 import Salary from "./pages/Salary/Salary"
+import Percentage from "./pages/Percentage/Percentage"
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
               <Route path="BodyFat" element={ <BodyFat/> } />
               <Route path="Inflation" element={ <Inflation/> } />
               <Route path="Salary" element={ <Salary/> } />
+              <Route path="Percentage" element={ <Percentage/> } />
             </Route>
 
         </Routes>

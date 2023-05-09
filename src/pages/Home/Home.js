@@ -10,6 +10,7 @@ const Home = () => {
       <Link to="BodyFat">Body Fat</Link>
       <Link to="Inflation">Inflation</Link>
       <Link to="Salary">Salary</Link>
+      <Link to="Percentage">Percentage</Link>
     </div>
   )
 }
