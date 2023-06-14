@@ -11,6 +11,7 @@ const Home = () => {
       <Link to="Inflation">Inflation</Link>
       <Link to="Salary">Salary</Link>
       <Link to="Percentage">Percentage</Link>
+      <Link to="FuelCostCalculator">Fuel Cost Calculator</Link>
     </div>
   )
 }
