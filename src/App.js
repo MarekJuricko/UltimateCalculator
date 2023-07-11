@@ -9,6 +9,7 @@ import Inflation from "./pages/Inflation/Inflation"
 import Salary from "./pages/Salary/Salary"
 import Percentage from "./pages/Percentage/Percentage"
 import FuelCostCalculator from "./pages/FuelCostCalculator/FuelCostCalculator"
+import PasswordGenerator from "./pages/PasswordGenerator/PasswordGenerator"
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
               <Route path="Salary" element={ <Salary/> } />
               <Route path="Percentage" element={ <Percentage/> } />
               <Route path="FuelCostCalculator" element={ <FuelCostCalculator/> } />
+              <Route path="PasswordGenerator" element={ <PasswordGenerator/> } />
             </Route>
 
         </Routes>
