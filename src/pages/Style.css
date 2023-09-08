@@ -1,0 +1,242 @@
+/*STYLES FOR main CLASS*/
+.main{
+    text-align: center;
+    outline: 0px solid red;
+    min-height: 85vh;
+    margin: 5% 15%;
+    overflow: hidden;
+}
+
+/*STYLES FOR text CLASS*/
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 1.5vh;
+}
+
+/*STYLES FOR form CLASS*/
+.form{
+    box-shadow: 1px 1px 25px black, -1px -1px 15px green;
+    padding: 5vh 10vw;
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 20px;
+    width: 40%;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+/*STYLES FOR form-input CLASS*/
+.form-input{
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    margin-top: 1%;
+    padding: 1.5vh 10vw;
+    margin-bottom: 2vh;
+    font-size: 20px;
+}
+
+.form-input>input{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.5vh 0.5vw;
+    max-width: 7.5vw;
+    background-color: rgb(90, 90, 90);
+    color: rgb(245, 245, 245);
+    border: 1px solid rgba(0, 225, 0, 0.5);
+    margin: 0 0.5vw;
+}
+
+.form-input>input::placeholder{
+    color: rgb(5, 5, 5);
+    font-size: 18px;
+}
+
+.form-input>input:focus{
+    outline: none;
+}
+
+.form-input>label{
+    margin-right: 0.5vw;
+}
+
+/*STYLES FOR input CLASS*/
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5vh auto;
+    box-shadow: 1.5px 1.5px 5px grey;
+}
+
+.input>input{
+    text-align: center;
+    max-width: 7.5vw;
+    background-color: rgb(75, 75, 75);
+    color: rgb(235, 235, 235);
+    border: 1px solid rgba(0, 255, 0, 0.5);
+    margin: 1vh 0.5vw;
+    padding: 0.75vh;
+}
+
+.input>input:focus{
+    outline: none;
+}
+
+/*STYLES FOR input CLASS WITH TYPE RADIO*/
+.input>input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(100, 100, 100);
+    content: '';
+    display: inline-block;
+    border: 1px solid white;
+}
+
+.input>input[type='radio']:checked:after {
+    background-color: rgb(0, 200, 0);
+    border: 2px solid transparent;
+}
+
+/*STYLES FOR input CLASS WITH TYPE CHECKBOX*/
+.input>input[type='checkbox']:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -7px;
+    left: -7px;
+    position: relative;
+    background-color: rgb(100, 100, 100);
+    content: '';
+    display: inline-block;
+    border: 1px solid white;
+}
+
+.input>input[type='checkbox']:checked:after {
+    background-color: rgb(0, 200, 0);
+    border: 2px solid white;
+}
+
+/*STYLES FOR input-range CLASS*/
+.input>.input-range{
+    background-color: transparent;
+    border: none;
+}
+
+.input-range{
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15vw;
+    min-width: 5vw;
+    margin: 0 2.5vw;
+}
+
+.input-range::-webkit-slider-runnable-track {
+    border: 1px solid black;
+    background-color: #00fa81;
+    border-radius: 20rem;
+    height: 1.5vh;
+}
+
+.input-range::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    margin-top: -12px; 
+    background-color: black;
+    border: 1px solid lime;
+    border-radius: 0.5rem;
+    height: 4vh;
+    width: 0.5vw;
+    min-width: 10px;
+}
+
+/*STYLES FOR select CLASS*/
+.select>select{
+    min-height: 3vh;
+    max-width: 12vw;
+    margin: 0 0.5vw;
+    background-color: rgb(100, 100, 100);
+    color: rgb(235, 235, 235);
+}
+
+.select>select:focus{   
+    outline: 1px solid #00fa81;
+}
+
+/*STYLES FOR submit CLASS*/
+.submit{
+    margin-top: 5vh;
+    padding: 1vh 1.5vw;
+    color: rgb(235, 235, 235);
+    font-weight: bold;
+    background-color: green;
+    border: 2.5px solid lime;
+    cursor: pointer; 
+}
+
+.submit:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 200, 0);
+    border: 2.5px solid rgb(0, 255, 0);
+}
+
+/*STYLES FOR button CLASS*/
+.button{
+    margin-bottom: 5vh;
+    padding: 1vh 1.5vw;
+    color: rgb(235, 235, 235);
+    font-weight: bold;
+    background-color: rgb(90, 90, 90);
+    border: 2.5px solid rgb(235, 235, 235);
+    cursor: pointer; 
+}
+
+.button:hover{
+    color: rgb(90, 90, 90);
+    background-color: rgb(235, 235, 235);
+    border: 2.5px solid rgb(205, 205, 205);
+}
+
+/*STYLES FOR sable-sectionCLASS*/
+.table-section{
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 20px;
+    width: 40vw;
+    min-width: 500px;
+    margin: auto;
+}
+
+.table-section>.Investment-text{
+    text-align: center;
+    margin-top: 15vh;
+    margin-bottom: 7.5vh;
+}
+
+.table{
+    margin: auto;
+    margin-top: -7.5vh;
+    padding: 2vh 0.5vw;
+    width: 30vw;
+    text-align: center;
+}
+
+.table-categories>td{
+    border: 5px solid rgb(0, 128, 0);
+    background-color: rgb(0, 128, 0);
+    color: rgb(245, 245, 245);
+}
+
+.table-row>td{
+    background-color: rgb(245, 245, 245);
+    color: rgb(25, 25, 25);
+}
