@@ -1,4 +1,4 @@
-import "./BodyFat.css"
+import "../Style.css"
 import { useState } from "react"
 
 const BodyFat = () => {
@@ -75,83 +75,83 @@ const BodyFat = () => {
     }
 
   return (
-    <div className="BodyFat-main">
+    <div className="main">
 
-        <div className="BodyFat-text">
+        <div className="text">
             <h1>{bodyFat}</h1>
             <h3>{fatMass} {leanMass}</h3>
         </div>
     
-        <form className="BodyFat-form" onSubmit={submitForm}>
-            <div className="BodyFat-input">
+        <form className="form" onSubmit={submitForm}>
+            <div className="input">
                 <input type="radio" name="gender" value="male" onChange={(e)=>{setGender(e.target.value)}}/>Male
                 <input type="radio" name="gender" value="female" onChange={(e)=>{setGender(e.target.value)}}/>Female
             </div>
-            <div className="BodyFat-input">
+            <div className="input">
                 <label htmlFor="age">Age</label>
                 <input name="age" type="number" onChange={(e)=>{setAge(e.target.value)}}/>
                 <label htmlFor="age">years</label>
             </div>
-            <div className="BodyFat-input">
+            <div className="input">
                 <label htmlFor="weight">Weight</label>
                 <input name="weight" type="number" onChange={(e)=>{setWeight(e.target.value)}}/>
                 <label htmlFor="weight">kg</label>
             </div>
-            <div className="BodyFat-input">
+            <div className="input">
                 <label htmlFor="height">Height</label>
                 <input name="height" type="number" onChange={(e)=>{setHeight(e.target.value)}}/>
                 <label htmlFor="height">cm</label>
             </div>
-            <div className="BodyFat-input">
+            <div className="input">
                 <label htmlFor="neck">Neck</label>
                 <input name="neck" type="number" onChange={(e)=>{setNeck(e.target.value)}}/>
                 <label htmlFor="neck">cm</label>
             </div>
-            <div className="BodyFat-input">
+            <div className="input">
                 <label htmlFor="waist">Waist</label>
                 <input name="waist" type="number" onChange={(e)=>{setWaist(e.target.value)}}/>
                 <label htmlFor="waist">cm</label>
             </div>
-            <div className="BodyFat-input">
+            <div className="input">
                 <label htmlFor="hip">Hip</label>
                 <input name="hip" type="number" onChange={(e)=>{setHip(e.target.value)}}/>
                 <label htmlFor="hip">cm</label>
             </div>
             
-            <input className="BodyFat-submit" type="submit" value="Calculate"/>
+            <input className="submit" type="submit" value="Calculate"/>
         </form>
         
-        <div className="BodyFat-table-section">
-            <h3 className="BodyFat-text">Body fat categorization</h3>
+        <div className="table-section">
+            <h3 className="text">Body fat categorization</h3>
 
-            <table className="BodyFat-table">
+            <table className="table">
                 <tbody>
-                    <tr className="BodyFat-table-categories">
+                    <tr className="table-categories">
                         <td>Description</td>
                         <td>Men</td>
                         <td>Women</td>
                     </tr>
-                    <tr className="BodyFat-table-row">
+                    <tr className="table-row">
                         <td>Essencial fat</td>
                         <td>2 - 5%</td>
                         <td>10 - 13%</td>
                     </tr>
-                    <tr className="BodyFat-table-row">
+                    <tr className="table-row">
                         <td>Athletes</td>
                         <td>6 - 13%</td>
                         <td>14 - 20%</td>
                     </tr>
-                    <tr className="BodyFat-table-row">
+                    <tr className="table-row">
                         <td>Fitness</td>
                         <td>14 - 17%</td>
                         <td>21 - 24%</td>
                     </tr>
-                    <tr className="BodyFat-table-row">
+                    <tr className="table-row">
                         <td>Average</td>
                         <td>18 - 24%</td>
                         <td>25 - 31%</td>
                     </tr>
-                    <tr className="BodyFat-table-row">
+                    <tr className="table-row">
                         <td>Obese</td>
                         <td>25+%</td>
                         <td>32+%</td>

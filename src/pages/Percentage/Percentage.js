@@ -1,4 +1,4 @@
-import "./Percentage.css"
+import "../Style.css"
 import { useState } from "react"
 
 const Percentage = () => {
@@ -40,15 +40,16 @@ const Percentage = () => {
     }
 
   return (
-    <div className="Percentage-main">
-        <h1>Percentage Calculator</h1>
+    <div className="main">
 
-        <div className="Percentage-form-section">
+        <h1 className="text">Percentage Calculator</h1>
+
+        <div className="form-section">
             <h2>{outcome}</h2>
 
-            <form onSubmit={submitForm} className="Percentage-form">
+            <form onSubmit={submitForm} className="form">
 
-                <div className="Percentage-form-input">
+                <div className="form-input">
                     <input 
                     name="percent" 
                     type="number"
@@ -75,8 +76,8 @@ const Percentage = () => {
 
                 </div>
 
-                <input className="Percentage-submit" type="submit" value="Calculate"/>
-                <input className="Percentage-button" type="button" value="Clear" onClick={clear}/>
+                <input className="submit" type="submit" value="Calculate"/>
+                <input className="button" type="button" value="Clear" onClick={clear}/>
             </form>
 
         </div>

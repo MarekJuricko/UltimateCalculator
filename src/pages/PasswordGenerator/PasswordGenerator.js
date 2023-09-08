@@ -1,4 +1,4 @@
-import "./PasswordGenerator.css"
+import "../Style.css"
 import { useState } from "react"
 
 const PasswordGenerator = () => {
@@ -95,37 +95,37 @@ const PasswordGenerator = () => {
     }
 
   return (
-    <div className="Password-main">
+    <div className="main">
 
-        <div className="Password-text">
+        <div className="text">
             <h1>Password Generator</h1>
             <h2>{password}</h2>
             <h3>{entropyValue} {entropyValueComment}</h3>
         </div>
     
-        <form className="Password-form" onSubmit={submitForm}>
-            <div className="Password-input">
+        <form className="form" onSubmit={submitForm}>
+            <div className="input">
                 <label htmlFor="passLength">Password length: {passwordLength} characters</label>
-                <input className="Password-input-range" type="range" min="4" max="50" name="passLength" value={passwordLength} onChange={(e) => setPasswordLength(e.target.value)}/>
+                <input className="input-range" type="range" min="4" max="50" name="passLength" value={passwordLength} onChange={(e) => setPasswordLength(e.target.value)}/>
             </div>
-            <div className="Password-input">
+            <div className="input">
                 <input type="checkbox" name="lowerCase" onChange={(e)=>{arrayUpdate(e)}}/>
                 <label htmlFor="lowerCase">Include lower case</label>
             </div>
-            <div className="Password-input">
+            <div className="input">
                 <input type="checkbox" name="upperCase" onChange={(e)=>{arrayUpdate(e)}}/>
                 <label htmlFor="upperCase">Include upper case</label>
             </div>
-            <div className="Password-input">
+            <div className="input">
                 <input type="checkbox" name="digits" onChange={(e)=>{arrayUpdate(e)}}/>
                 <label htmlFor="digits">Include numbers</label>
             </div>
-            <div className="Password-input">
+            <div className="input">
                 <input type="checkbox" name="special" onChange={(e)=>{arrayUpdate(e)}}/>
                 <label htmlFor="special">Include symbols</label>
             </div>
                         
-            <input className="Password-submit" type="submit" value="Generate"/>
+            <input className="submit" type="submit" value="Generate"/>
         </form>
 
     </div>

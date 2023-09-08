@@ -1,4 +1,4 @@
-import "./CalorieCalculator.css"
+import "../Style.css"
 import { useState } from "react"
 
 const CalorieCalculator = () => {
@@ -51,31 +51,33 @@ const CalorieCalculator = () => {
     }
 
   return (
-    <div className="CalorieCalculator-main">
+    <div className="main">
 
-        <h1>{resultCalories}</h1>
+        <div className="text">
+            <h1>{resultCalories}</h1>
+        </div>
 
-        <form onSubmit={submitForm} className="CalorieCalculator-form">
-            <div className="CalorieCalculator-input">
+        <form onSubmit={submitForm} className="form">
+            <div className="input">
                 <input type="radio" name="gender" value="male" onChange={(e)=>{setGender(e.target.value)}}/>Male
                 <input type="radio" name="gender" value="female" onChange={(e)=>{setGender(e.target.value)}}/>Female
             </div>
-            <div className="CalorieCalculator-input">
+            <div className="input">
                 <label htmlFor="age">Age</label>
                 <input name="age" type="number" onChange={(e)=>{setAge(e.target.value)}}/>
                 <label htmlFor="age">years</label>
             </div>
-            <div className="CalorieCalculator-input">
+            <div className="input">
                 <label htmlFor="height">Height</label>
                 <input name="height" type="number" onChange={(e)=>{setHeight(e.target.value)}}/>
                 <label htmlFor="height">cm</label>
             </div>
-            <div className="CalorieCalculator-input">
+            <div className="input">
                 <label htmlFor="weight">Weight</label>
                 <input name="weight" type="number" onChange={(e)=>{setWeight(e.target.value)}}/>
                 <label htmlFor="weight">kg</label>
             </div>
-            <div className="CalorieCalculator-select">
+            <div className="select">
                 <label htmlFor="activity">Activity</label>
                 <select name="activity" onChange={(e)=>{setActivity(e.target.value)}}>
                     <option value="1">Sedentary (little or no exercise)</option>
@@ -85,10 +87,10 @@ const CalorieCalculator = () => {
                     <option value="5">Very active (hard exercise 6-7 days/week)</option>
                 </select>
             </div>
-            <input className="CalorieCalculator-submit" type="submit" value="Calculate"/>
+            <input className="submit" type="submit" value="Calculate"/>
         </form>
 
-        <h3>Remember that this estimate is based on your body weight, height, age, gender, and your average level of activity. You can use this information to help you figure out how many calories you should be consuming to maintain your weight.</h3>
+        <h3 className="text">Remember that this estimate is based on your body weight, height, age, gender, and your average level of activity. You can use this information to help you figure out how many calories you should be consuming to maintain your weight.</h3>
     </div>
   )
 }

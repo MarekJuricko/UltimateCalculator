@@ -1,4 +1,4 @@
-import "./Salary.css"
+import "../Style.css"
 import { useState } from "react"
 
 const Salary = () => {
@@ -54,20 +54,20 @@ const Salary = () => {
     }
 
   return (
-    <div className="Salary-main">
+    <div className="main">
 
-        <h1 className="Salary-text">Salary Calculator</h1>
+        <h1 className="text">Salary Calculator</h1>
 
-        <form className="Salary-form" onSubmit={submitForm}>
+        <form className="form" onSubmit={submitForm}>
 
-            <h2 className="Salary-text">Salary amount</h2>
+            <h2 className="text">Salary amount</h2>
 
-            <div className="Salary-input">
+            <div className="input">
                 <label htmlFor="cash">Cash</label>
                 <input  name="cash" type="number" onChange={(e)=>{setCash(e.target.value)}}/>
             </div>
             
-            <div className="Salary-select">
+            <div className="select">
                 <label htmlFor="period">per </label>
 
                 <select name="period" onChange={(e)=>{setPeriod(e.target.value)}}>
@@ -76,46 +76,46 @@ const Salary = () => {
                 </select>
             </div>
 
-            <div className="Salary-input">
+            <div className="input">
                 <label htmlFor="weekHours">Hours per week</label>
                 <input name="weekHours" type="number" onChange={(e)=>{setWeekHours(e.target.value)}}/>
             </div>
 
-            <div className="Salary-input">
+            <div className="input">
                 <label htmlFor="weekDays">Days per week</label>
                 <input name="weekDays" type="number" onChange={(e)=>{setWeekDays(e.target.value)}}/>
             </div>
 
-            <input className="Salary-submit" type="submit" value="Calculate"/>
+            <input className="submit" type="submit" value="Calculate"/>
         </form>
 
-        <div className="Salary-table-section">
-            <h3 className="Salary-text">Result</h3>
+        <div className="table-section">
+            <h3 className="text">Result</h3>
 
-            <table className="Salary-table">
+            <table className="table">
                 <tbody>
-                    <tr className="Salary-table-categories">
+                    <tr className="table-categories">
                         <td>Time period</td>
                         <td>Cash earnings</td>
                     </tr>
-                    <tr className="Salary-table-row">
+                    <tr className="table-row">
                         <td>Hourly</td>
                         <td>{hourly}</td>
                     </tr>
-                    <tr className="Salary-table-row">
+                    <tr className="table-row">
                         <td>Daily</td>
                         <td>{daily}</td>
 
                     </tr>
-                    <tr className="Salary-table-row">
+                    <tr className="table-row">
                         <td>Weekly</td>
                         <td>{weekly}</td>
                     </tr>
-                    <tr className="Salary-table-row">
+                    <tr className="table-row">
                         <td>Monthly</td>
                         <td>{monthly}</td>
                     </tr>
-                    <tr className="Salary-table-row">
+                    <tr className="table-row">
                         <td>Annually</td>
                         <td>{annually}</td>
                     </tr>

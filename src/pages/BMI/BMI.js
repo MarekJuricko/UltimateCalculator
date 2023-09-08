@@ -1,4 +1,4 @@
-import "./BMI.css"
+import "../Style.css"
 import { useState } from "react"
 
 const BMI = () => {
@@ -64,19 +64,19 @@ const BMI = () => {
 
     
     return (
-        <div className="BMI-main">
-            <h1 className="BMI-text">{bmi} {category}</h1>
-            <h1 className="BMI-text">{weightRange}</h1>
-            <form onChange={submitForm} className="BMI-form">
-                <div className="BMI-input">
-                    <label htmlFor="BMI-height">Height:</label>
-                    <input className="BMI-input-range" type="range" min="50" max="220" name="BMI-height" value={height} onChange={(e) => setHeight(e.target.value)}/>
-                    <label htmlFor="BMI-height">{height}cm</label>
+        <div className="main">
+            <h1 className="text">{bmi} {category}</h1>
+            <h1 className="text">{weightRange}</h1>
+            <form onChange={submitForm} className="form">
+                <div className="input">
+                    <label htmlFor="height">Height:</label>
+                    <input className="input-range" type="range" min="50" max="220" name="BMI-height" value={height} onChange={(e) => setHeight(e.target.value)}/>
+                    <label htmlFor="height">{height}cm</label>
                 </div>
-                <div className="BMI-input">
-                    <label htmlFor="BMI-weight">Weight:</label>
-                    <input className="BMI-input-range" type="range" min="40" max="180" name="BMI-weight" value={weight} onChange={(e) => setWeight(e.target.value)}/>
-                    <label htmlFor="BMI-weight">{weight}kg</label>
+                <div className="input">
+                    <label htmlFor="weight">Weight:</label>
+                    <input className="input-range" type="range" min="40" max="180" name="BMI-weight" value={weight} onChange={(e) => setWeight(e.target.value)}/>
+                    <label htmlFor="weight">{weight}kg</label>
                 </div>
             </form>
         </div>

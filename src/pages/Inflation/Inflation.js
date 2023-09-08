@@ -1,4 +1,4 @@
-import "./Inflation.css"
+import "../Style.css"
 import { useState } from "react"
 
 const Inflation = () => {
@@ -46,16 +46,17 @@ const Inflation = () => {
 
 
   return (
-    <div className="Inflation-main">
-        <h1>Inflation Calculator</h1>
+    <div className="main">
 
-        <div className="Inflation-form-section">
+        <h1 className="text">Inflation Calculator</h1>
+
+        <div className="form-section">
             <h2>Forward rate Inflation calculator</h2>
             <h3>{forwardResult}</h3>
 
-            <form onSubmit={submitFormForward} className="Inflation-form">
+            <form onSubmit={submitFormForward} className="form">
 
-                <div className="Inflation-form-input">
+                <div className="form-input">
                     <input 
                     name="forwardRate" 
                     type="number" 
@@ -81,18 +82,18 @@ const Inflation = () => {
                     <label htmlFor="forwardRate"> = ? </label>
                 </div>
 
-                <input className="Inflation-submit" type="submit" value="Calculate"/>
+                <input className="submit" type="submit" value="Calculate"/>
             </form>
 
         </div>
 
-        <div className="Inflation-form-section">
+        <div className="form-section">
             <h2>Backward Flat Rate Inflation Calculator</h2>
             <h3>{backwardResult}</h3>
 
-            <form onSubmit={submitFormBackward} className="Inflation-form">
+            <form onSubmit={submitFormBackward} className="form">
 
-                <div className="Inflation-form-input">
+                <div className="form-input">
                     <input 
                     name="backwardRate" 
                     type="number" 
@@ -116,7 +117,7 @@ const Inflation = () => {
                     <label htmlFor="backwardRate"> ago = ? </label>
                 </div>
 
-                <input className="Inflation-submit" type="submit" value="Calculate"/>
+                <input className="submit" type="submit" value="Calculate"/>
             </form>
 
         </div>

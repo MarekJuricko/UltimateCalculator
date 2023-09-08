@@ -1,4 +1,4 @@
-import "./FuelCostCalculator.css"
+import "../Style.css"
 import { useState } from "react"
 
 const FuelCostCalculator = () => {
@@ -24,31 +24,31 @@ const FuelCostCalculator = () => {
     }
 
   return (
-    <div className="FuelCost-main">
+    <div className="main">
 
-        <div className="FuelCost-text">
+        <div className="text">
             <h1>Fuel Cost Calculator</h1>
             <h3>{outcome}</h3>
         </div>
     
-        <form className="FuelCost-form" onSubmit={submitForm}>
-            <div className="FuelCost-input">
+        <form className="form" onSubmit={submitForm}>
+            <div className="input">
                 <label htmlFor="distance">Trip distance</label>
                 <input name="distance" type="number" onChange={(e)=>{setDistance(e.target.value)}}/>
                 <label htmlFor="distance">kilometers</label>
             </div>
-            <div className="FuelCost-input">
+            <div className="input">
                 <label htmlFor="efficiency">Fuel Efficiency</label>
                 <input name="efficiency" type="number" step="0.5" onChange={(e)=>{setFuelEfficiency(e.target.value)}}/>
                 <label htmlFor="efficiency">L/100km</label>
             </div>
-            <div className="FuelCost-input">
+            <div className="input">
                 <label htmlFor="price">Fuel Price</label>
                 <input name="price" type="number" step="0.01" onChange={(e)=>{setFuelPrice(e.target.value)}}/>
                 <label htmlFor="price">per liter</label>
             </div>
                         
-            <input className="FuelCost-submit" type="submit" value="Calculate"/>
+            <input className="submit" type="submit" value="Calculate"/>
         </form>
 
     </div>

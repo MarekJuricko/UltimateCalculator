@@ -1,4 +1,4 @@
-import "./InvestmentCalculator.css"
+import "../Style.css"
 import { useState } from "react"
 
 const InvestmentCalculator = () => {
@@ -78,12 +78,12 @@ const InvestmentCalculator = () => {
   
   
     return (
-    <div className="Investment-main">
-        <h1 className="Investment-text">Investment Calculator</h1>
+    <div className="main">
+        <h1 className="text">Investment Calculator</h1>
 
-        <form className="Investment-form" onSubmit={submitForm}>
+        <form className="form" onSubmit={submitForm}>
 
-            <div className="Investment-form-input">
+            <div className="form-input">
                 <label htmlFor="cash">Starting amount</label>
                 <input 
                 name="cash" 
@@ -91,7 +91,7 @@ const InvestmentCalculator = () => {
                 onChange={(e)=>{setStartAmount(e.target.value)}}/>
             </div>
 
-            <div className="Investment-form-input">
+            <div className="form-input">
                 <label htmlFor="years">After</label>
                 <input 
                 name="years" 
@@ -100,7 +100,7 @@ const InvestmentCalculator = () => {
                 onChange={(e)=>{setYears(e.target.value)}}/>
             </div>
 
-            <div className="Investment-form-input">
+            <div className="form-input">
                 <label htmlFor="rate">Return rate</label>
                 <input 
                 name="rate" 
@@ -110,7 +110,7 @@ const InvestmentCalculator = () => {
                 onChange={(e)=>{setInterest(e.target.value)}}/>
             </div>
 
-            <div className="Investment-form-input">
+            <div className="form-input">
                 <label htmlFor="contribution">Monthly contribution</label>
                 <input 
                 name="contribution" 
@@ -118,19 +118,19 @@ const InvestmentCalculator = () => {
                 onChange={(e)=>{setContribution(e.target.value)}}/>
             </div>
 
-            <input className="Investment-submit" type="submit" value="Calculate"/>
+            <input className="submit" type="submit" value="Calculate"/>
         </form>
 
-            <h2 className="Investment-text">Result</h2>
+            <h2 className="text">Result</h2>
 
-            <table className="Investment-table-section">
+            <table className="table-section">
                 <tbody>
-                    <tr className="Investment-table-categories">
+                    <tr className="table-categories">
                         <td>Total Contributions</td>
                         <td>Total Interest</td>
                         <td>End Balance</td>
                     </tr>
-                    <tr className="Investment-table-row">
+                    <tr className="table-row">
                         <td>{finalContribution}</td>
                         <td>{finalInterest}</td>
                         <td>{finalAmount}</td>
@@ -138,11 +138,11 @@ const InvestmentCalculator = () => {
                 </tbody>
             </table>
 
-            <h2 className="Investment-text">More advanced result</h2>
+            <h2 className="text">More advanced result</h2>
 
-            <table className="Investment-table-section">
+            <table className="table-section">
                 <tbody>
-                    <tr className="Investment-table-categories">
+                    <tr className="table-categories">
                     <td></td>
                     <td>Contributions</td>
                     <td>Starting Amount</td>
@@ -150,7 +150,7 @@ const InvestmentCalculator = () => {
                     <td>End Balance</td>
                  </tr>
                 {contributionsData.map((contribution, index) => (
-                    <tr className="Investment-table-row" key={index}>
+                    <tr className="table-row" key={index}>
                         <td>{index + 1}</td>
                         <td>{contribution}</td>
                         <td>{startingAmountData[index]}</td>
