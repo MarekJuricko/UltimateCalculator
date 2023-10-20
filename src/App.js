@@ -11,6 +11,7 @@ import Percentage from "./pages/Percentage/Percentage"
 import FuelCostCalculator from "./pages/FuelCostCalculator/FuelCostCalculator"
 import PasswordGenerator from "./pages/PasswordGenerator/PasswordGenerator"
 import InvestmentCalculator from "./pages/InvestmentCalculator/InvestmentCalculator"
+import AgeCalculator from "./pages/AgeCalculator/AgeCalculator"
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
               <Route path="FuelCostCalculator" element={ <FuelCostCalculator/> } />
               <Route path="PasswordGenerator" element={ <PasswordGenerator/> } />
               <Route path="InvestmentCalculator" element={ <InvestmentCalculator/> } />
+              <Route path="AgeCalculator" element={ <AgeCalculator/> } />
             </Route>
 
         </Routes>

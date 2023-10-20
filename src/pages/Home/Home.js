@@ -14,6 +14,7 @@ const Home = () => {
       <Link to="FuelCostCalculator">Fuel Cost Calculator</Link>
       <Link to="PasswordGenerator">Password Generator</Link>
       <Link to="InvestmentCalculator">Investment Calculator</Link>
+      <Link to="AgeCalculator">Age Calculator</Link>
     </div>
   )
 }
