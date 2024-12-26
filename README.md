@@ -39,7 +39,7 @@ UltimateCalculator is a comprehensive web application designed to handle various
 ## Components
 
 - **Header**: Displays the navigation bar and main header for the application.
-- **Footer**: Provides additional navigation and general app information.
+- **Footer**: Displays copyright information and the author's signature.
 - **SharedLayout**: Ensures consistent layout and styling across all pages.
 
 ## Pages
